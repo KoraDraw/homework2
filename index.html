@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .navigation{
+            display: flex;
+            flex-direction: column;
+            background-color: blanchedalmond;
+            width: 20%;
+        }
+        .logo{
+            padding: 20px;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            background-color: aquamarine;
+        }
+        .gallery1{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 150px;
+        }
+        .gallery2{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 150px;
+        }
+        .gallery3{
+            display: flex;
+            flex-direction: row;
+            width: 250px;
+            height: 200px;
+        }
+        img{
+        width: 100%;
+        }
+        nav{
+            padding: 30px;
+        }
+        .gallery1:hover img{
+            transform: scale(1.1);
+        }
+        .gallery2:hover img{
+            transform: scale(1.1);
+        }
+        .gallery3:hover img{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="navigation">
+            <div class="logo"> <img src="/images/logo.png" alt="logo"></div>
+            <div class="navigation1">
+                <nav>
+                    <ul>
+                        <li> <a href="#About us">About us</a></li>
+                        <li> <a href="#Our products">Our products</a></li>
+                        <li> <a href="#Reviews">Reviews</a></li>
+                        <li> <a href="#Sale">Sale</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="main">
+            <div class="gallery1">
+                <img src="/images/book.jpg" alt="book">
+                <img src="/images/ball.jpg" alt="ball">
+            </div>
+            <div class="gallery2">
+                <img src="/images/flowers.jpg" alt="flowers">
+                <img src="/images/spider.jpg" alt="" srcset="spider">
+            </div>
+            <div class="gallery3">
+                <img src="/images/diamond.jpg" alt="diamond">
+                <img src="/images/hat.jpg" alt="hat">
+                <img src="/images/paper.jpg" alt="paper">
+                <img src="/images/bottle.jpg" alt="bottle">
+
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
